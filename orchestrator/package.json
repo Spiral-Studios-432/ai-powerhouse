@@ -1,0 +1,12 @@
+{
+  "name": "orchestrator",
+  "type": "module",
+  "scripts": {
+    "dev": "node --watch src/index.js"
+  },
+  "dependencies": {
+    "nats": "^2.19.1",
+    "pino": "^9.0.0",
+    "dotenv": "^16.4.5"
+  }
+}
