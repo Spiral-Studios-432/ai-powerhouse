@@ -1,11 +1,13 @@
-import { connect, NatsConnection } from 'nats';
+import nats from 'nats';
 import { logger } from '../logger/index.js';
+
+const { connect } = nats;
 
 /**
  * Creates a NATS connection with default configuration
  * @param {Object} options - Connection options
  * @param {string} options.servers - NATS server URL (default: 'nats://localhost:4222')
- * @returns {Promise<NatsConnection>} Connected NATS connection
+ * @returns {Promise} Connected NATS connection
  */
 export async function createNatsConnection(options = {}) {
   const servers = options.servers || process.env.NATS_SERVERS || 'nats://localhost:4222';

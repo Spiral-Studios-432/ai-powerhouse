@@ -1,0 +1,16 @@
+{
+  "name": "crawler-agent",
+  "type": "module",
+  "version": "1.0.0",
+  "scripts": {
+    "dev": "node --watch src/index.js",
+    "start": "node src/index.js"
+  },
+  "dependencies": {
+    "puppeteer": "^24.30.0",
+    "nats": "^2.19.1",
+    "pino": "^9.0.0",
+    "dotenv": "^16.4.5"
+  }
+}
+
